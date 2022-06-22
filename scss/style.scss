@@ -1,0 +1,11 @@
+/** @format */
+@import "./components/common.scss";
+@import "./base/base.scss";
+/** @components */
+// @import "./components/header.scss";
+// @import "./components/footer.scss";
+/** @page */
+@import "./page/home.scss";
+/** @responsive */
+@import "./responsive/lg-max-1300.scss";
+@import "./responsive/xs-max-675.scss";
