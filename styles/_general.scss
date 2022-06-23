@@ -3,12 +3,16 @@
 
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url("../assets/fonts/static/Quicksand-Medium.ttf");
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat/Montserrat-Light.ttf");
 }
 @font-face {
-    font-family: 'Quicksand-regular';
-    src: url("../assets/fonts/static/Quicksand-Regular.ttf");
+    font-family: 'Montserrat-medium';
+    src: url("../assets/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf");
 }
 
 
@@ -48,7 +52,7 @@
 }
 
 @function m($size) {
-    @return ($size / 414) * 100vw;
+    @return ($size / 420) * 100vw;
 }
 
 @function t($size) {

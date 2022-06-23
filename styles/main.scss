@@ -5,7 +5,635 @@
     padding-right: p(191);
 
     @include MB {
-        padding-left: m(20);
-        padding-right: m(20);
+        padding-left: m(35);
+        padding-right: m(35);
+    }
+}
+
+.banner {
+    background-image: url('../assets/images/banner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: p(852);
+
+    @include MB {
+        height: m(863);
+    }
+
+    .text_banner {
+        height: p(852);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include MB {
+            height: m(863);
+        }
+
+        .title_sub {
+            position: relative;
+            padding-bottom: p(10);
+            margin-bottom: p(26);
+
+            @include MB {
+                padding-bottom: m(7);
+                margin-bottom: m(30);
+            }
+
+            &::after {
+                content: "";
+                width: p(64);
+                height: p(2);
+                background-color: #FEFEFE;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                @include MB {
+                    width: m(53);
+                    height: m(2);
+                }
+            }
+
+            span {
+
+                font-size: p(18);
+                line-height: p(22);
+                font-weight: 800;
+                font-family: Montserrat;
+                letter-spacing: p(1.8);
+                color: #FFFFFF;
+                text-transform: uppercase;
+
+                @include MB {
+                    font-size: m(15);
+                    line-height: m(19);
+                    letter-spacing: m(1.5);
+                }
+            }
+        }
+
+        h1 {
+
+            letter-spacing: 0px;
+            font-weight: bold;
+            font-size: p(45);
+            line-height: p(65);
+            font-family: Montserrat-bold;
+            color: #FFFFFF;
+            width: p(560);
+
+            @include MB {
+                width: m(342);
+                font-size: m(30);
+                line-height: m(37);
+            }
+        }
+    }
+}
+
+.tabs {
+    background-color: #112047;
+    padding: p(38.5) 0;
+
+    @include MB {
+        padding: m(22) 0;
+    }
+
+    .wrapper_tab {
+        @include MB {
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+
+        }
+    }
+
+    .tabLinks {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        color: #777777;
+        font-size: p(25);
+        padding-right: p(135);
+        cursor: pointer;
+        line-height: p(30);
+        font-weight: bold;
+        font-family: Montserrat-bold;
+        transition: all .3s ease-out;
+
+        @include MB {
+            font-size: m(15);
+            line-height: m(19);
+            padding-right: m(52);
+
+        }
+
+        &.active {
+            color: #fff;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+main {
+    background-color: #F5F5F5;
+    padding-top: p(123);
+    background-image: url('../assets/images/linebg.svg');
+
+    @include MB {
+        padding-top: m(57);
+    }
+}
+
+.title_main {
+
+    margin-bottom: p(58);
+
+    @include MB {
+        margin-bottom: m(40);
+    }
+
+    h2 {
+        color: #112047;
+        font-family: Montserrat-bold;
+        font-weight: bold;
+        font-size: p(55);
+        line-height: p(76);
+        display: inline-block;
+        position: relative;
+        padding: p(15) p(30);
+
+        @include MB {
+            font-size: m(27);
+            line-height: m(55);
+            padding: m(0) m(22);
+
+        }
+
+        &::before {
+            content: "";
+            border-top: p(5) solid #F37022;
+            border-left: p(5) solid #F37022;
+            position: absolute;
+            width: p(30);
+            height: p(30);
+            left: 0;
+            top: 0;
+
+            @include MB {
+                width: m(22);
+                height: m(22);
+                border-top: m(3) solid #F37022;
+                border-left: m(3) solid #F37022;
+            }
+        }
+
+        &::after {
+            content: "";
+            border-right: p(5) solid #F37022;
+            border-bottom: p(5) solid #F37022;
+            position: absolute;
+            width: p(30);
+            height: p(30);
+            right: 0;
+            bottom: 0;
+
+            @include MB {
+                width: m(22);
+                height: m(22);
+                border-right: m(3) solid #F37022;
+                border-bottom: m(3) solid #F37022;
+            }
+        }
+    }
+}
+
+.wrapper_connect {
+
+
+
+    .desc {
+        width: p(1157);
+        margin-bottom: p(69.75);
+
+        @include MB {
+            width: 100%;
+            margin-bottom: m(48);
+        }
+
+        .txt_p {
+            font-size: p(40);
+            line-height: p(60);
+            font-family: Montserrat;
+            font-weight: normal;
+            color: #112047;
+
+            @include MB {
+                font-size: m(25);
+                line-height: m(40);
+            }
+
+            .b_txt {
+                font-weight: bold;
+                font-family: Montserrat-bold;
+            }
+        }
+    }
+
+    .content {
+        font-size: p(20);
+        width: p(1157);
+        line-height: p(40);
+        font-family: Montserrat-medium;
+        font-weight: medium;
+        color: #323232;
+        margin-bottom: p(134);
+
+        @include MB {
+            margin-bottom: m(70);
+            width: 100%;
+            font-size: m(15);
+            line-height: m(25);
+        }
+    }
+
+    .img_blog {
+        display: flex;
+        justify-content: center;
+        margin-bottom: p(156);
+
+        @include MB {
+            margin-bottom: m(74);
+        }
+
+        img {
+            width: p(937);
+            height: p(1343);
+
+            @include MB {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+// =================================
+.wrapper_fuel {
+    background-color: #112047;
+    padding-top: p(102);
+    padding-bottom: p(125);
+
+    @include MB {
+        padding-top: m(57);
+        padding-bottom: m(41);
+    }
+
+    .title {
+        h2 {
+            color: #fff;
+
+            &::after {
+                border-right: p(5) solid #fff;
+                border-bottom: p(5) solid #fff;
+
+                @include MB {
+                    border-right: m(3) solid #fff;
+                    border-bottom: m(3) solid #fff;
+                }
+            }
+
+            &::before {
+                border-top: p(5) solid #fff;
+                border-left: p(5) solid #fff;
+
+                @include MB {
+                    border-top: m(3) solid #fff;
+                    border-left: m(3) solid #fff;
+                }
+            }
+        }
+    }
+
+    .desc_title {
+        margin: p(35) 0 p(105);
+
+        @include MB {
+            margin: m(24) 0 m(75);
+        }
+
+        p {
+            color: #F37022;
+            font-weight: bold;
+            font-size: p(35);
+            line-height: p(65);
+            font-family: Montserrat-bold;
+
+            @include MB {
+                font-size: m(20);
+                line-height: m(35);
+            }
+        }
+    }
+
+    .wrapper_content_fuel {
+        display: grid;
+        grid-template-columns: .75fr repeat(1, minmax(p(10), 2fr));
+        grid-column-gap: p(86.5);
+
+        @include MB {
+            display: block;
+        }
+
+        .content_left {
+            ul {
+                li {
+                    cursor: pointer;
+                    border-bottom: p(2) solid #414D6C;
+                    padding-top: p(38.5);
+                    padding-bottom: p(24.5);
+
+                    @include MB {
+                        border-bottom: m(2) solid #414D6C;
+                        padding-top: m(25);
+                        padding-bottom: m(24);
+                    }
+
+                    &:first-child {
+                        padding-top: 0;
+                    }
+
+                    span {
+                        color: #fff;
+                        font-weight: 600;
+                        font-family: Montserrat;
+                        font-size: p(25);
+                        line-height: p(35);
+                        transition: all .3s ease-out;
+
+                        @include MB {
+                            font-size: m(20);
+                            line-height: m(35);
+                        }
+
+                        &:hover {
+                            color: #F37022;
+                        }
+
+                        &.active {
+                            color: #F37022;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right_slider {
+            .item_img {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.slick-dots li button::before {
+    width: p(10);
+    height: p(10);
+    font-size: p(10);
+    border: p(1) solid #F7F7F7;
+    border-radius: 50%;
+    opacity: 1;
+    line-height: p(15);
+    color: inherit;
+
+    @include MB {
+        width: m(10);
+        height: m(10);
+        font-size: m(10);
+        border: m(1) solid #F7F7F7;
+        border-radius: 50%;
+        opacity: 1;
+        line-height: m(15);
+    }
+}
+
+.slick-dots li button {
+    padding: p(7);
+    width: p(10);
+    height: p(10);
+
+    @include MB {
+        padding: m(7);
+        width: m(10);
+        height: m(10);
+    }
+}
+
+.slick-dots li {
+    width: p(10);
+    margin: 0 p(9);
+    height: p(10);
+
+    @include MB {
+        width: m(10);
+        margin: 0 m(9);
+        height: m(10);
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    border: none;
+    color: #F36827;
+    font-size: p(15);
+    width: p(10);
+    height: p(10);
+
+    @include MB {
+        font-size: m(15);
+        width: m(10);
+        height: m(10);
+    }
+}
+
+// ==============================
+.wrapper_cost {
+    padding-top: p(120);
+    padding-bottom: p(130);
+
+    @include MB {
+        padding-top: m(40);
+        padding-bottom: m(62);
+    }
+
+    .title {
+        margin-bottom: p(33);
+
+        h2 {
+            @include MB {
+                line-height: m(35);
+                padding-top: m(10);
+                padding-bottom: m(10);
+            }
+
+            &::after {
+                @include MB {
+                    right: inherit;
+                }
+            }
+        }
+
+        @include MB {
+            margin-bottom: m(37.56);
+        }
+    }
+
+    .desc_title {
+        margin-bottom: p(126);
+
+        @include MB {
+            margin-bottom: m(51);
+        }
+
+        p {
+            font-size: p(35);
+            line-height: p(40);
+            font-family: Montserrat-medium;
+            color: #F37022;
+            font-weight: bold;
+
+            @include MB {
+                font-size: m(20);
+                line-height: m(35);
+            }
+        }
+    }
+
+    .wrapper_cost_item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: p(40);
+
+        @include MB {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: m(37);
+            grid-row-gap: m(59);
+        }
+    }
+
+    .item_cost {
+        display: flex;
+
+        .img_it {
+            margin-right: p(34);
+
+            @include MB {
+                margin-right: m(15);
+            }
+
+            img {
+                width: p(78);
+                height: p(202);
+
+                @include MB {
+                    width: m(35);
+                    height: m(91);
+                }
+            }
+        }
+
+        .content {
+            .heading {
+                padding-bottom: p(17.75);
+                border-bottom: p(2) solid #ccc;
+
+                @include MB {
+                    padding-bottom: m(12);
+                    border-bottom: m(2) solid #ccc;
+                }
+
+                span {
+                    color: #F36827;
+                    text-transform: uppercase;
+                    font-family: Montserrat;
+                    font-size: p(20);
+                    line-height: p(24);
+                    display: block;
+                    margin-bottom: p(17);
+
+                    @include MB {
+                        margin: 0;
+                        font-size: m(12);
+                        line-height: m(15);
+                    }
+                }
+
+                .price {
+                    .price_usd {
+                        display: block;
+                        text-transform: uppercase;
+                        color: #F36827;
+                        font-weight: 800;
+                        font-size: p(30);
+                        margin-bottom: 0;
+                        line-height: p(37);
+                        font-family: Montserrat;
+
+                        @include MB {
+                            font-size: m(17);
+                            line-height: m(20);
+                        }
+                    }
+
+                    .price_vnd {
+                        display: block;
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                        color: #112047;
+                        font-weight: 600;
+                        font-size: p(25);
+                        line-height: p(30);
+                        font-family: Montserrat-medium;
+
+                        @include MB {
+                            font-size: m(13);
+                            line-height: m(16);
+                        }
+                    }
+                }
+            }
+
+            .footing {
+                padding-top: p(19);
+
+                @include MB {
+                    padding-top: m(9.64);
+                }
+
+                p {
+                    color: #112047;
+                    font-weight: medium;
+                    font-size: p(20);
+                    line-height: p(30);
+                    font-family: Montserrat;
+
+                    @include MB {
+                        font-size: m(15);
+                        line-height: m(25);
+                    }
+                }
+            }
+        }
     }
 }
