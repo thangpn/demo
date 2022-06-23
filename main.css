@@ -1,0 +1,18 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+
+}
+.row {
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+.container h1 {
+    color: pink;
+}
