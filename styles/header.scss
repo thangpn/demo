@@ -1,0 +1,204 @@
+@import "general";
+
+.container {
+    padding-left: p(90);
+    padding-right: p(90);
+
+    @include MB {
+        padding-left: m(20);
+        padding-right: m(20);
+    }
+}
+
+// =============== Top Header===================
+.top_header {
+    background: #DD3E5E;
+
+    .txt_top_header {
+        text-align: center;
+        padding: p(12) 0 p(6) 0;
+
+        p {
+            font-family: 'Quicksand-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: p(14);
+            line-height: p(18);
+
+            color: #FFFFFF;
+
+        }
+    }
+}
+
+
+// ======== Header ============
+
+.wrapper_header {
+    padding-top: p(20);
+    display: flex;
+    justify-content: space-between;
+
+    .form_search {
+        position: relative;
+
+        input[type="text"] {
+            width: p(193);
+            border: p(1) solid #DD3E5E;
+            border-radius: p(10);
+            padding: p(13) p(11);
+            outline: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: p(12);
+            line-height: p(14);
+            color: #77787B;
+
+            &::placeholder {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: p(12);
+                line-height: p(14);
+                color: #77787B;
+            }
+        }
+
+        .btn_search {
+            background-color: inherit;
+            border: none;
+            position: absolute;
+            right: p(11.47);
+            top: p(11.47);
+
+            img {
+                width: p(17.5);
+                height: p(17.6);
+            }
+        }
+    }
+
+    .logo_main {
+        .img_logo {
+            img {
+                width: p(182.44);
+                height: p(68);
+            }
+        }
+    }
+
+    .box_exts {
+        display: flex;
+
+        .cart {
+            background: #DD3E5E;
+            border-radius: p(10);
+            padding: p(8) p(17);
+            height: p(40);
+            position: relative;
+            margin-right: p(16);
+
+            img {
+                width: p(23.33);
+                height: p(23.33);
+            }
+
+            .bage {
+                position: absolute;
+                top: 5%;
+                right: 8%;
+                background: #FEF4E9;
+                border: p(1) solid #DD3E5E;
+
+                width: p(18);
+                height: p(18);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+
+                span {
+                    color: #DD3E5E;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: p(12);
+                    line-height: p(15);
+                    font-family: 'Quicksand';
+                }
+            }
+
+        }
+
+        .hotline {
+            background: #DD3E5E;
+            border-radius: p(10);
+            padding: p(8.5) p(16);
+            display: flex;
+            height: p(40);
+            align-items: center;
+
+            .img_call {
+                img {
+                    width: p(18);
+                    height: p(18);
+                }
+            }
+
+            .txt {
+                margin-left: p(9);
+
+                span {
+                    font-family: 'Quicksand-regular';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: p(18);
+                    line-height: p(22);
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+
+// ============ Main menu ==========
+
+.wrapper_menu {
+    padding: p(24) 0 p(20);
+
+    .content_menu {
+        display: flex;
+        justify-content: center;
+
+        li {
+            padding: 0 p(18);
+
+            a {
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 500;
+                font-size: p(16);
+                line-height: p(20);
+                transition: all .2s linear;
+                color: #333333;
+
+                &:hover {
+                    color: #DD3E5E;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    margin-bottom: p(52);
+
+    .img_banner {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

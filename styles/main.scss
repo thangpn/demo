@@ -1,0 +1,11 @@
+@import "general";
+
+.container {
+    padding-left: p(191);
+    padding-right: p(191);
+
+    @include MB {
+        padding-left: m(20);
+        padding-right: m(20);
+    }
+}

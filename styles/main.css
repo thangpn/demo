@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@use "sass:math";
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../assets/fonts/static/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Quicksand-regular';
+  src: url("../assets/fonts/static/Quicksand-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    padding-left: 10.9375vw !important;
+    padding-right: 10.9375vw !important;
+  }
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+#more {
+  display: none;
+}
+
+#more1 {
+  display: none;
+}
+
+.active_height {
+  max-height: inherit !important;
+}
+
+.active_height_max {
+  max-height: 0 !important;
+}
+
+.container {
+  padding-left: 9.94792vw;
+  padding-right: 9.94792vw;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding-left: 4.83092vw;
+    padding-right: 4.83092vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */
