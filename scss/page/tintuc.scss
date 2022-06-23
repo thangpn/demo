@@ -1,0 +1,132 @@
+.btn {
+  &--readMore {
+    background-color: transparent;
+    border: none;
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    transition: transform 0.3s ease-out;
+  }
+}
+.arrow {
+  &::after {
+    display: inline-block;
+    padding-left: 19px;
+    content: '\0279E'; // arrow right unicode
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -ms-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+    &::after {
+      -webkit-transform: translateX(8px);
+      -moz-transform: translateX(8px);
+      -ms-transform: translateX(8px);
+      -o-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+  }
+}
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.hero {
+  background-image: url('/img/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tintuc {
+  padding-top: 235px;
+  padding-bottom: 235px;
+  &__heading {
+    font: normal normal 800 18px/22px Montserrat;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      display: block;
+      width: 64px;
+      height: 1px;
+      background-color: #ffffff;
+      margin-top: 10px;
+    }
+  }
+  &__title {
+    font: normal normal bold 45px/65px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-top: 36.5px;
+    margin-bottom: 36.5px;
+  }
+  &__desc {
+    // font: normal normal medium 20px/35px Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 75.5px;
+  }
+}
+
+.nav {
+  background: #112047 0% 0% no-repeat padding-box;
+  padding-top: 41px;
+  padding-bottom: 41px;
+
+  &__list {
+    display: flex;
+    gap: 135px;
+  }
+  &__link {
+    font: normal normal bold 25px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #777777;
+    transition: color 0.3s ease;
+    &--active,
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.article-list {
+  padding-top: 118px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 476px));
+    column-gap: 47px;
+    row-gap: 156px;
+  }
+}
+
+.article {
+  &__image {
+    margin-bottom: 53px;
+  }
+  &__category {
+    display: inline-block;
+    font: normal normal medium 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #989898;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  &__title {
+    font: normal normal bold 25px/40px Montserrat;
+    letter-spacing: 0px;
+    margin-bottom: 32px;
+    color: #112047;
+  }
+  .btn--readMore {
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #838383;
+  }
+}

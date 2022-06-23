@@ -1,40 +1,40 @@
 @font-face {
-    font-family: 'Averia';
-    src: url("/font/AveriaLibre-Regular.ttf");
+  font-family: 'Averia';
+  src: url('/font/AveriaLibre-Regular.ttf');
 }
 @font-face {
-    font-family: 'Bebas';
-    src: url("/font/Bebas-Regular.ttf");
+  font-family: 'Bebas';
+  src: url('/font/Bebas-Regular.ttf');
 }
 @font-face {
-    font-family: 'Boogaloo';
-    src: url("/font/Boogaloo-Regular.ttf");
+  font-family: 'Boogaloo';
+  src: url('/font/Boogaloo-Regular.ttf');
 }
 @font-face {
-    font-family: 'awesome';
-    src: url("/font/fonts/fontawesome-webfont.woff");
+  font-family: 'awesome';
+  src: url('/font/fonts/fontawesome-webfont.woff');
 }
 @font-face {
-    font-family: 'Roboto';
-    src: url("/font/Roboto.woff");
+  font-family: 'Roboto';
+  src: url('/font/Roboto.woff');
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    font-family: 'Godofwar','Ropasans';
-    font-size: 12px;
-    // color: #000;
-    // font-weight: normal;
-    
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  // color: #000;
+  // font-weight: normal;
 }
 @media screen and (max-width: 640px) {
-    ::-webkit-scrollbar {
-        display: none;
-    }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 html,
 body,
@@ -117,11 +117,11 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
