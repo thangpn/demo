@@ -1,3 +1,15 @@
+.fixed {
+  position: fixed;
+  &.phone {
+    top: 75vh;
+    left: 34px;
+  }
+  &.messenger {
+    top: 90vh;
+    left: 50px;
+  }
+}
+
 .btn {
   &--readMore {
     background-color: transparent;
@@ -52,7 +64,8 @@
       content: '';
       display: block;
       width: 64px;
-      height: 1px;
+      height: 0px;
+      border: 2px solid #fefefe;
       background-color: #ffffff;
       margin-top: 10px;
     }
@@ -97,18 +110,29 @@
 
 .article-list {
   padding-top: 118px;
+  padding-bottom: 156px;
 
   &__grid {
     display: grid;
+    place-content: center;
     grid-template-columns: repeat(auto-fit, minmax(360px, 476px));
     column-gap: 47px;
     row-gap: 156px;
+    margin-bottom: 150px;
   }
 }
 
 .article {
   &__image {
     margin-bottom: 53px;
+    overflow: hidden;
+
+    & img {
+      transition: transform 0.5s ease;
+    }
+    &:hover img {
+      transform: scale(1.2);
+    }
   }
   &__category {
     display: inline-block;
@@ -123,10 +147,134 @@
     letter-spacing: 0px;
     margin-bottom: 32px;
     color: #112047;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #f36827;
+    }
   }
   .btn--readMore {
     font: normal normal 600 18px/22px Montserrat;
     letter-spacing: 0px;
     color: #838383;
+  }
+
+  &-btn {
+    width: 221px;
+    height: 65px;
+    border: 1px solid #f36827;
+    background-color: transparent;
+    text-align: center;
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #f36827;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+
+    &:hover span {
+      display: none;
+    }
+    &:hover {
+      &::before {
+        content: 'Xem toàn Bộ';
+      }
+      background-color: #f36827;
+      color: #fff;
+    }
+  }
+}
+
+.contact {
+  background: #f37022 0% 0% no-repeat padding-box;
+  padding: 72px 0 192px;
+  color: #fff;
+  &__heading {
+    font: normal normal 800 18px/22px Montserrat;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      display: block;
+      width: 64px;
+      height: 0px;
+      border: 2px solid #fefefe;
+      background-color: #ffffff;
+      margin-top: 10px;
+    }
+  }
+
+  &__title {
+    letter-spacing: 0px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    color: #ffffff;
+    &--bold {
+      display: block;
+      font: normal normal bold 40px/50px Montserrat;
+    }
+    font: normal normal normal 40px/50px Montserrat;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    &-left {
+      flex-basis: 752px;
+      flex: 1 0;
+      margin-right: 70px;
+    }
+    &-right {
+      flex-basis: 674px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info {
+    display: flex;
+    &__content {
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font: normal normal bold 22px/35px Montserrat;
+      color: #ffffff;
+    }
+  }
+
+  .row {
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-gap: 30px;
+    margin-top: 63px;
+
+    .col {
+      width: 100%;
+    }
+
+    .form-group {
+      input {
+        width: 100%;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        padding: 17px 0;
+        font: normal normal 600 18px/22px Montserrat;
+        color: #ffffff;
+
+        &::placeholder {
+          font: normal normal 600 18px/22px Montserrat;
+          color: #ffffff;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
   }
 }

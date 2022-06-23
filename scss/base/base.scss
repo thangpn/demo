@@ -125,3 +125,8 @@ video {
 html {
   scroll-behavior: smooth;
 }
+img,
+video {
+  max-width: 100%;
+  vertical-align: middle;
+}
