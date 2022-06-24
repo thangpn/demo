@@ -121,6 +121,7 @@ video {
 .fixed.phone {
   top: 41.40625vw;
   left: 1.7708333333vw;
+  width: 5.8854166667vw;
 }
 @media (max-width: 620px) {
   .fixed.phone {
@@ -132,6 +133,7 @@ video {
 .fixed.messenger {
   top: 48.90625vw;
   left: 2.6041666667vw;
+  width: 19.0476190476vw;
 }
 @media (max-width: 620px) {
   .fixed.messenger {
@@ -312,15 +314,20 @@ video {
 }
 .article-list__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  place-content: center;
+  grid-template-columns: repeat(3, 24.7916666667vw);
   column-gap: 2.7083333333vw;
   row-gap: 8.125vw;
   margin-bottom: 7.8125vw;
 }
+@media (min-width: 621px) and (max-width: 1024px) {
+  .article-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 620px) {
   .article-list__grid {
     margin-bottom: 16.6666666667vw;
+    grid-template-columns: repeat(1, 85.7142857143vw);
   }
 }
 
