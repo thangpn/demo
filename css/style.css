@@ -119,25 +119,23 @@ video {
   position: fixed;
 }
 .fixed.phone {
-  top: 41.40625vw;
+  top: 70vh;
   left: 1.7708333333vw;
-  width: 5.8854166667vw;
+  width: 5.46875vw;
 }
 @media (max-width: 620px) {
   .fixed.phone {
-    top: 166.6666666667vw;
     left: 3.0952380952vw;
     width: 15.7142857143vw;
   }
 }
 .fixed.messenger {
-  top: 48.90625vw;
+  top: 85vh;
   left: 2.6041666667vw;
-  width: 19.0476190476vw;
+  width: 4.1666666667vw;
 }
 @media (max-width: 620px) {
   .fixed.messenger {
-    top: 186.6666666667vw;
     left: 5.2380952381vw;
     width: 11.1904761905vw;
   }
@@ -438,20 +436,28 @@ video {
   padding: 3.75vw 0 10vw;
   color: #fff;
 }
+@media (max-width: 620px) {
+  .contact {
+    padding: 0;
+  }
+  .contact .container {
+    padding: 0;
+  }
+}
 .contact__heading {
   font-family: Montserrat;
   font-size: 0.9375vw;
   line-height: 1.1458333333vw;
-  font-weight: 800;
+  font-weight: 300;
   letter-spacing: 0.09375vw;
   color: #ffffff;
   text-transform: uppercase;
 }
 @media (max-width: 620px) {
   .contact__heading {
-    font-size: 0.78125vw;
-    line-height: 0.9895833333vw;
-    letter-spacing: 0.078125vw;
+    font-size: 3.5714285714vw;
+    line-height: 4.5238095238vw;
+    letter-spacing: 0.3571428571vw;
   }
 }
 .contact__heading::after {
@@ -491,22 +497,41 @@ video {
 }
 .contact__content {
   display: flex;
-  flex-wrap: wrap;
+}
+@media (max-width: 620px) {
+  .contact__content {
+    flex-direction: column-reverse;
+  }
 }
 .contact__content-left {
-  flex-basis: 752px;
-  flex: 1 0;
-  margin-right: 70px;
+  flex-basis: 43.0208333333vw;
+  margin-right: 3.6458333333vw;
+}
+@media (max-width: 620px) {
+  .contact__content-left {
+    margin-right: 0;
+    padding: 10.9523809524vw 7.619047619vw;
+  }
 }
 .contact__content-right {
-  flex-basis: 674px;
-}
-.contact__info {
-  display: flex;
-  justify-content: space-between;
+  flex-basis: 35.1041666667vw;
+  align-self: end;
 }
 .contact .info {
   display: flex;
+}
+@media (max-width: 620px) {
+  .contact .info {
+    align-items: center;
+  }
+}
+.contact .info__icon {
+  width: 3.3854166667vw;
+}
+@media (max-width: 620px) {
+  .contact .info__icon {
+    width: 14.2857142857vw;
+  }
 }
 .contact .info__content {
   margin-left: 1.3020833333vw;
@@ -519,16 +544,35 @@ video {
   font-weight: 700;
   color: #ffffff;
 }
+@media (max-width: 620px) {
+  .contact .info__content {
+    font-size: 4.7619047619vw;
+    line-height: 7.619047619vw;
+  }
+}
 .contact .row {
   width: 100%;
   display: grid;
   grid: auto/auto auto;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  grid-gap: 30px;
-  margin-top: 63px;
+  grid-gap: 1.5625vw;
+  margin-top: 3.28125vw;
+}
+@media (max-width: 620px) {
+  .contact .row {
+    grid-template-columns: 1fr;
+  }
 }
 .contact .row .col {
   width: 100%;
+}
+@media (max-width: 620px) {
+  .contact .row .col:nth-child(1) {
+    margin-bottom: 14.0476190476vw;
+  }
+  .contact .row .col:nth-child(2) {
+    margin-bottom: 9.0476190476vw;
+  }
 }
 .contact .row .form-group input {
   width: 100%;
@@ -541,6 +585,14 @@ video {
   font-weight: 600;
   color: #ffffff;
 }
+@media (max-width: 620px) {
+  .contact .row .form-group input {
+    padding: 4.2857142857vw 0;
+    font-size: 3.5714285714vw;
+    line-height: 4.5238095238vw;
+    border-bottom: 1px solid #fff;
+  }
+}
 .contact .row .form-group input::placeholder {
   font-family: Montserrat;
   font-size: 0.9375vw;
@@ -548,8 +600,38 @@ video {
   font-weight: 600;
   color: #ffffff;
 }
+@media (max-width: 620px) {
+  .contact .row .form-group input::placeholder {
+    font-size: 3.5714285714vw;
+    line-height: 4.5238095238vw;
+  }
+}
 .contact .row .form-group input:focus {
   outline: none;
+}
+.contact .row .form-text {
+  font-size: 0.9375vw;
+  line-height: 1.1458333333vw;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.contact .row .form-btn {
+  margin-left: auto;
+  display: block;
+  width: 8.8020833333vw;
+  height: 3.3854166667vw;
+  border: 2px solid #f5f5f5;
+  background-color: #f37022;
+  color: #ffffff;
+  font-size: 0.9375vw;
+  line-height: 1.1458333333vw;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.contact .row .form-btn:hover {
+  background-color: #ffffff;
+  color: #f37022;
 }
 
 /*# sourceMappingURL=style.css.map */
