@@ -438,6 +438,7 @@ video {
 }
 @media (max-width: 620px) {
   .contact {
+    position: relative;
     padding: 0;
   }
   .contact .container {
@@ -504,13 +505,13 @@ video {
   }
 }
 .contact__content-left {
-  flex-basis: 43.0208333333vw;
+  flex-basis: 46.875vw;
   margin-right: 3.6458333333vw;
 }
 @media (max-width: 620px) {
   .contact__content-left {
     margin-right: 0;
-    padding: 10.9523809524vw 7.619047619vw;
+    padding: 10.9523809524vw 7.619047619vw 15.4761904762vw;
   }
 }
 .contact__content-right {
@@ -616,6 +617,13 @@ video {
   letter-spacing: 0px;
   color: #ffffff;
 }
+@media (max-width: 620px) {
+  .contact .row .form-text {
+    font-size: 3.5714285714vw;
+    line-height: 4.5238095238vw;
+    margin-top: 8.5714285714vw;
+  }
+}
 .contact .row .form-btn {
   margin-left: auto;
   display: block;
@@ -628,6 +636,19 @@ video {
   line-height: 1.1458333333vw;
   font-weight: 600;
   transition: background 0.3s ease;
+}
+@media (max-width: 620px) {
+  .contact .row .form-btn {
+    width: 41.4285714286vw;
+    height: 12.380952381vw;
+    font-size: 3.0952380952vw;
+    line-height: 3.8095238095vw;
+    margin-top: 10.7142857143vw;
+    margin-left: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .contact .row .form-btn:hover {
   background-color: #ffffff;
