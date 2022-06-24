@@ -1,24 +1,3 @@
-@font-face {
-  font-family: 'Averia';
-  src: url('/font/AveriaLibre-Regular.ttf');
-}
-@font-face {
-  font-family: 'Bebas';
-  src: url('/font/Bebas-Regular.ttf');
-}
-@font-face {
-  font-family: 'Boogaloo';
-  src: url('/font/Boogaloo-Regular.ttf');
-}
-@font-face {
-  font-family: 'awesome';
-  src: url('/font/fonts/fontawesome-webfont.woff');
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/font/Roboto.woff');
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +7,6 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   box-sizing: border-box;
-  // color: #000;
-  // font-weight: normal;
 }
 @media screen and (max-width: 640px) {
   ::-webkit-scrollbar {

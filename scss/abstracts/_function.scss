@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+@function p($size) {
+  @return (calc($size / 1920)) * 100vw;
+}
+
+@function m($size) {
+  @return (calc($size / 420)) * 100vw;
+}
+
+@function t($size) {
+  @return (calc($size / 992)) * 100vw;
+}
