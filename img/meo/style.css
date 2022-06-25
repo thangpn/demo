@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic,
+        "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    /* background-color: #f5d0c7; */
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.logo {
+    width: 300px;
+    margin-top: 5px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.1rem;
+    text-transform: none;
+    margin-top: 34px;
+    list-style: none;
+    letter-spacing: 7px;
+    font-family: serif;
+    font-weight: bold;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.dropdown__lists {
+    display: none; /*デフォルトでは非表示の状態にしておく*/
+    width: 100%;
+    position: relative;
+    top: 2px;
+    left: 100;
+}
+.menu-nav:hover .dropdown__lists {
+    display: block; /*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+    background-color: none;
+    top: 10px;
+    height: 30px;
+    transition: all 0.3s;
+    position: relative;
+}
+.dropdown__list:not(:first-child)::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #3492d1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.dropdown__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+}
+.dropdown__lists li {
+    list-style: none;
+}
+/*
+---------------------------------------------------------------------------------------------------- */
+/* Body_Home
+------------------------------- */
+.home-content {
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    height: 50%;
+}
+.home-content img {
+    border-radius: 50%; /* 角丸半径を50%にする(=円形にする) */
+    width: 430px; /* ※縦横を同値に */
+    height: 400px; /* ※縦横を同値に */
+    position: relative;
+    top: -20px;
+    left: 120px;
+}
+.home-content h2 {
+    font-size: 6rem;
+    position: relative;
+    top: -400px;
+    left: 600px;
+    font-family: serif;
+    width: 300px;
+}
+.home-content p {
+    font-size: 4rem;
+    margin: 170px 0 43px;
+    padding: 10px;
+    font-family: serif;
+    position: relative;
+    top: -600px;
+    left: 600px;
+    width: 500px;
+}
+.button1 {
+    font-family: serif;
+    font-size: 30px;
+    background: rgb(194, 33, 87);
+    color: #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 300px;
+    left: 700px;
+}
+.button1:hover {
+    background: rgb(90, 16, 40);
+}
+.button1 a {
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+.button2 {
+    font-family: serif;
+    font-size: 30px;
+    background: rgb(2, 98, 161);
+    color: #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 150px;
+    left: 900px;
+}
+.button2:hover {
+    background: rgb(1, 48, 80);
+}
+.button2 a {
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+.button3 {
+    font-family: serif;
+    font-size: 30px;
+    background: rgb(71, 145, 2);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 1100px;
+}
+.button3:hover {
+    background: rgb(40, 82, 1);
+}
+.button3 a {
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+.explanation h4 {
+    font-family: serif;
+    position: relative;
+    top: 0px;
+    left: 350px;
+    width: 800px;
+}
+/*
+---------------------------------------------------------------------------------------------------- */
+/* Body_Profile
+------------------------------- */
+.prof_home img {
+    width: 300px; /* ※縦横を同値に */
+    height: 200px; /* ※縦横を同値に */
+    position: relative;
+    top: 0px;
+    left: 550px;
+}
+.prof_home table {
+    margin: 30px 400px;
+}
+
+/* Footer
+------------------------------- */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0, 2, 109);
+    padding: 0;
+    height: 200px;
+}
+.footer-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item__img {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.footer-item__title {
+    margin-top: 8px;
+    color: #fff;
+    display: block;
+    text-align: center;
+}

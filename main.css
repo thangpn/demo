@@ -1,6 +1,7 @@
 :root {
     --white-color: #fff;
     --black-color: #000;
+    --border-color: #dbdbdb;
 
 }
 .row {
@@ -9,10 +10,9 @@
     margin-right: -4px;
 }
 .col {
-    padding-left: 4px;
-    padding-right: 4px;
-
-}
-.container h1 {
-    color: pink;
+        display: flex;
+        margin-left: 4px;
+        margin-right: 4px;
+        width: 50%;
+        justify-content: space-between;
 }
