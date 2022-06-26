@@ -16,3 +16,13 @@
         width: 50%;
         justify-content: space-between;
 }
+.contact__map {
+
+}
+.contact__map--title {
+    background-color: white;
+    width: 220px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
