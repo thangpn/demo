@@ -1,28 +1,48 @@
-:root {
+    :root {
     --white-color: #fff;
     --black-color: #000;
     --border-color: #dbdbdb;
-
-}
-.row {
+    }
+    .row {
     display: flex;
     margin-left: -4px;
     margin-right: -4px;
-}
-.col {
-        display: flex;
-        margin-left: 4px;
-        margin-right: 4px;
-        width: 50%;
-        justify-content: space-between;
-}
-.contact__map {
-
-}
-.contact__map--title {
-    background-color: white;
+    }
+    .col {
+    display: flex;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 50%;
+    justify-content: space-between;
+    }
+    .contact__map {
+    }
+    .contact__map--title {
+   
     width: 220px;
     height: 70px;
     line-height: 70px;
     text-align: center;
-}
+    position: relative;
+    }
+    .contact__map--title::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+
+    border-top: 4px solid orange;
+    border-left: 4px solid  orange;
+    top: 0;
+    left: 0;
+    }
+    .contact__map--title::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-right: 4px solid orange;
+    border-bottom: 4px solid orange;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    }
