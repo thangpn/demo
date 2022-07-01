@@ -1,0 +1,33 @@
+.card {
+  width: p(561);
+  height: p(217);
+  display: flex;
+  margin-bottom: p(93);
+  &__number {
+    font-size: p(115);
+    line-height: p(75);
+    font-weight: 600;
+    color: $secondary-color;
+    margin-right: p(73);
+  }
+  &__heading {
+    font-size: p(25);
+    line-height: p(30);
+    font-weight: 800;
+    color: $primary-color;
+  }
+  &__divider {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $underline-color-2;
+    margin-top: p(27);
+    margin-bottom: p(32);
+  }
+  &__desc {
+    font-size: p(20);
+    line-height: p(40);
+    font-weight: 400;
+    color: $text-color-3;
+  }
+}

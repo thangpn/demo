@@ -1,11 +1,9 @@
-/** @format */
-@import "./components/common.scss";
-@import "./base/base.scss";
-/** @components */
-// @import "./components/header.scss";
-// @import "./components/footer.scss";
-/** @page */
-@import "./page/home.scss";
-/** @responsive */
-@import "./responsive/lg-max-1300.scss";
-@import "./responsive/xs-max-675.scss";
+@import './vendors/reset';
+@import './base/fonts';
+@import './base/typography';
+@import './base/base.scss';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+@import './abstracts/variables';
+@import './components/blockCard';
+@import './page/main.scss';
